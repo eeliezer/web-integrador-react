@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import { motion } from 'framer-motion';
 
 export const NavbarContainerStyled = styled.div`
-  height: 100px;
+  height: 125px;
   background-color: rgb(255, 255, 255);
   display: flex;
   -webkit-box-pack: justify;
@@ -115,8 +115,8 @@ export const NavbarBuscador = styled.div`
   display: flex;
   flex-direction: column;
   h1 {
-    margin: 10px;
     color: var(--button-bg-red);
+    font-size: 2rem;
   }
 `;
 

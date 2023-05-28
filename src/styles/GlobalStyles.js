@@ -19,7 +19,7 @@ export const GlobalStyles = createGlobalStyle`
   background: var(--button-bg-red);
   font-family: 'Quantico', sans-serif;
   -webkit-tap-highlight-color: transparent;
-  overflow-x: hidden
+  overflow-x: hidden;
   }
   
   a {

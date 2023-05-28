@@ -8,13 +8,13 @@ const Footer = () => {
     <FooterContainerStyled>
       <LinksContainerStyled className='links'>
         <Link to='/' style={{ paddingLeft: '2rem' }}>
-          Términos de Uso
+          Términos de Uso y condiciones
         </Link>
         <Link to='/' style={{ paddingLeft: '2rem' }}>
-          Trabajá con Nosotros
+          Nuestras tiendas
         </Link>
         <Link to='/' style={{ paddingLeft: '2rem' }}>
-          Soporte
+          Ayuda
         </Link>
       </LinksContainerStyled>
       <p>

@@ -25,6 +25,7 @@ export const ProductosCard = styled.div`
     font-weight: 600;
     margin: 0;
     color: var(--button-bg-red);
+    font-size: 1.5rem;
   }
   p {
     color: var(--gray-bg-disabled);
