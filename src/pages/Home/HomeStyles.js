@@ -14,10 +14,22 @@ export const HomeWrapper = styled.div`
 
 export const CategoriasWrapper = styled.section`
   margin-top: 8rem;
+  @media (max-width: 481px) {
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
 `;
 
 export const ProductosWrapper = styled.section`
   padding-top: 5rem;
+  @media (max-width: 481px) {
+    h2 {
+      text-transform: uppercase;
+      font-size: 1.3rem;
+    }
+  }
 `;
 
 export const RecomendadosWrapper = styled.section`
@@ -25,6 +37,17 @@ export const RecomendadosWrapper = styled.section`
   width: 100%;
   h2 {
     font-weight: 400;
+  }
+
+  @media (max-width: 481px) {
+    margin-top: 0rem;
+
+    h2 {
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 1rem;
+      text-align: center;
+    }
   }
 `;
 

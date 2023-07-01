@@ -78,7 +78,7 @@ const Navbar = ({ doScroll }) => {
             value={value}
             onChange={e => setValue(e.target.value)}
             type='text'
-            placeholder='Star Wars, harry potter...'
+            placeholder='Star Wars...'
           />
           <IconWrapperStyled>
             <AiOutlineSearch />

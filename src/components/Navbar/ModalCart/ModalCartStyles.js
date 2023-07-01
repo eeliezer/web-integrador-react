@@ -33,6 +33,24 @@ export const ContainerStyled = styled(motion.div)`
     border-radius: 0px 0px 0px 1rem;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 25px 10px;
   }
+
+  @media (max-width: 481px) {
+    position: fixed;
+    top: -28px;
+    right: 0px;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    gap: 30px;
+    width: 320px;
+    height: 530px;
+    overflow: auto;
+    background-color: var(--background-card-white);
+    border-radius: 0px 0px 0px 1rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 25px 10px;
+  }
 `;
 
 export const CloseButtonContainerStyled = styled.div`
@@ -72,6 +90,13 @@ export const MainContainerStyled = styled.div`
   @media (max-width: 769px) {
     height: 73%;
   }
+
+  @media (max-width: 481px) {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const ProductsWrapperStyled = styled.div`
@@ -109,6 +134,19 @@ export const ProductsWrapperStyled = styled.div`
     padding: 1rem 1rem 1rem 0px;
     overflow: scroll;
   }
+
+  @media (max-width: 481px) {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 25px;
+    width: 110%;
+    height: 70%;
+    margin: 0px auto;
+    padding: 1rem 1rem 1rem 0px;
+    overflow: auto;
+  }
 `;
 
 export const ProductContainerStyled = styled.div`
@@ -130,6 +168,28 @@ export const ProductContainerStyled = styled.div`
     object-fit: cover;
     background: var(--button-bg-white);
   }
+
+  @media (max-width: 481px) {
+    display: flex;
+    -webkit-box-pack: justify;
+    width: 240px;
+    background: var(--button-bg-red);
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px 2px;
+    padding: 1rem;
+    border-radius: 5px;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 150px;
+    img {
+      width: 60px;
+      height: auto;
+      border-radius: 5px;
+      object-fit: cover;
+      background: var(--button-bg-white);
+    }
+  }
 `;
 
 export const TextContainerStyled = styled.div`
@@ -140,6 +200,15 @@ export const TextContainerStyled = styled.div`
   color: rgb(33, 33, 33);
   flex-direction: column;
   align-items: flex-start;
+
+  @media (max-width: 481px) {
+    display: flex;
+    width: 190px;
+    color: rgb(33, 33, 33);
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+  }
 `;
 
 export const CardTitleStyled = styled.h3`
@@ -148,6 +217,13 @@ export const CardTitleStyled = styled.h3`
   margin-bottom: 2px;
   font-weight: 600;
   color: #fff;
+
+  @media (max-width: 481px) {
+    margin: 0px 0px 2px;
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+  }
 `;
 
 export const TextStyled = styled.p`
@@ -161,6 +237,14 @@ export const PriceStyled = styled.span`
   font-size: 1.3rem;
   color: black;
   text-decoration: underline;
+
+  @media (max-width: 481px) {
+    font-weight: 800;
+    font-size: 1rem;
+    color: black;
+    text-decoration: underline;
+    text-align: center;
+  }
 `;
 
 export const PriceContainerStyled = styled.div`
@@ -194,6 +278,13 @@ export const ButtonContainerStyled = styled(SubtotalStyled)`
 export const QuantityContainerStyled = styled.div`
   display: flex;
   align-items: center;
+
+  @media (max-width: 481px) {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
 `;
 
 export const ContenedorClearCart = styled.div`

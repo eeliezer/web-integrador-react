@@ -16,6 +16,15 @@ export const CategoriasContainer = styled.div`
     user-select: none;
     flex-wrap: wrap;
   }
+  @media (max-width: 481px) {
+    display: flex;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 20px;
+    user-select: none;
+    flex-wrap: wrap;
+  }
 `;
 
 export const CardCategoria = styled(motion.div)`
@@ -46,6 +55,30 @@ export const CardCategoria = styled(motion.div)`
     img {
       padding-top: 7px;
       padding-bottom: 7px;
+    }
+  }
+
+  @media (max-width: 481px) {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 110px;
+    padding: 1rem 2rem;
+    color: var(--button-bg-red);
+    background-color: var(--button-bg-white);
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-box-align: center;
+    align-items: center;
+    h2 {
+      display: none;
+    }
+
+    img {
+      width: auto;
+      height: 35px;
     }
   }
 `;

@@ -63,6 +63,16 @@ export const LinksContainerStyled = styled.div`
     align-items: center;
     gap: 5px;
   }
+
+  @media (max-width: 481px) {
+    color: white;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 `;
 
 export const LinkContainerStyled = styled.div`
@@ -131,6 +141,17 @@ export const NavbarBuscador = styled.div`
     color: var(--button-bg-red);
     font-size: 2rem;
   }
+
+  @media (max-width: 481px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      color: var(--button-bg-red);
+      font-size: 1rem;
+      margin-top: 5%;
+    }
+  }
 `;
 
 export const NavbarFormStyled = styled.form`
@@ -139,6 +160,26 @@ export const NavbarFormStyled = styled.form`
     background: var(--button-bg-red);
     color: #ffffff;
     font-weight: 600;
+  }
+  @media (max-width: 481px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 270px;
+
+    button {
+      padding: 0.5rem 0.3rem;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      background: var(--button-bg-red);
+      color: white;
+      font-family: Quantico, sans-serif;
+      text-transform: uppercase;
+      font-weight: 400;
+      cursor: pointer;
+    }
   }
 `;
 
@@ -152,6 +193,18 @@ export const NavbarSearchBarStyled = styled.input`
   color: white;
   font-weight: 600;
   font-family: Quantico, sans-serif;
+
+  @media (max-width: 481px) {
+    background-color: var(--button-bg-red);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 170px;
+    color: white;
+    font-weight: 600;
+    font-family: Quantico, sans-serif;
+  }
 `;
 
 export const IconWrapperStyled = styled.div`
@@ -160,6 +213,13 @@ export const IconWrapperStyled = styled.div`
   position: relative;
   left: -2rem;
   top: 0.5rem;
+
+  @media (max-width: 481px) {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    position: relative;
+    left: -1.8rem;
+  }
 `;
 
 export const HeroBtnStyled = styled.input`

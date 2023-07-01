@@ -21,4 +21,12 @@ export const FooterContainerStyled = styled.footer`
 
 export const LinksContainerStyled = styled.div`
   margin-bottom: 2rem;
+
+  @media (max-width: 481px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    margin-left: -2rem;
+  }
 `;
