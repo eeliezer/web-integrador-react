@@ -33,6 +33,7 @@ export const ProductTitleStyled = styled.h3`
   margin: 0;
   margin-bottom: 2px;
   font-weight: 500;
+  font-size: 0.9rem;
 `;
 
 export const TextStyled = styled.h3`
@@ -47,6 +48,7 @@ export const PriceStyled = styled.span`
   line-height: 2rem;
   background: var(--button-bg-red);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 `;
 

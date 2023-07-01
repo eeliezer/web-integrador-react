@@ -12,18 +12,17 @@ const Checkout = () => {
     return (acc += item.price * item.quantity);
   }, 0);
 
-
   return (
     <div>
       <ContainerCheckoutStyled>
-        <CheckoutForm 
+        <CheckoutForm
           cartItems={cartItems}
           shippingCost={shippingCost}
           price={totalPrice}
         />
-        <ProductsCheckout 
+        <ProductsCheckout
           cartItems={cartItems}
-          shippingCost={ shippingCost }
+          shippingCost={shippingCost}
           price={totalPrice}
         />
       </ContainerCheckoutStyled>

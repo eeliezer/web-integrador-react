@@ -2,28 +2,26 @@ import React from 'react';
 import { formatPrice } from '../../utils';
 
 import {
-  ProductLeftStyled,
+  ProductCenterStyled,
   ProductPriceStyled,
   ProductStyled,
   PriceContainerStyled,
+  ProductInfoTitle,
 } from './CardResumenStyles';
 
-const CardResumen = () => {
+const CardResumen = ({ title, desc, quantity, img, price }) => {
   return (
     <ProductStyled>
-      <ProductLeftStyled>
-        <img
-          src='https://res.cloudinary.com/divurmndi/image/upload/v1684283766/El-album-de-bodas_bshqul.jpg'
-          alt='DC Comics Deluxe – La Muerte de Superman'
-        />
-        <div>
-          <h3>DC Comics Deluxe – La Muerte de Superman</h3>
-          <p>Libro de cara dura</p>
-        </div>
-      </ProductLeftStyled>
+      <ProductCenterStyled>
+        <img src={img} alt={title} />
+        <ProductInfoTitle>
+          <h3> {title} </h3>
+          <p> {desc} </p>
+        </ProductInfoTitle>
+      </ProductCenterStyled>
       <PriceContainerStyled>
-        <p>2U</p>
-        <ProductPriceStyled>{formatPrice(5000 * 2)}</ProductPriceStyled>
+        <p> x{quantity}U </p>
+        <ProductPriceStyled>{formatPrice(price * quantity)}</ProductPriceStyled>
       </PriceContainerStyled>
     </ProductStyled>
   );

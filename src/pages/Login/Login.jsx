@@ -13,19 +13,45 @@ import {
   LoginPasswordStyled,
   LoginInputContainer,
 } from './LoginStyles';
+import { loginInitialValues } from '../../formik/initialValues';
+import { loginValidationSchema } from '../../formik/validationSchema';
+import { useDispatch } from 'react-redux';
+import { loginUser } from '../../axios/axios-user';
+import { setCurrentUser } from '../../redux/user/userSlice';
+import { useRedirect } from '../../hooks/useRedirect';
 
 const Login = () => {
+  const dispatch = useDispatch();
+  useRedirect('/');
+
   return (
     <LoginContainerStyled>
       <h1>Iniciar Sesión</h1>
-      <Formik>
+      <Formik
+        initialValues={loginInitialValues}
+        validationSchema={loginValidationSchema}
+        onSubmit={async values => {
+          const { email, password } = values;
+          const user = await loginUser(email, password);
+          if (user) {
+            dispatch(
+              setCurrentUser({
+                ...user.usuario,
+                token: user.token,
+              })
+            );
+          }
+        }}
+      >
         <Form>
           <LoginInputContainer>
-            <LoginInput type='text' placeholder='Email' />
-            <LoginInput type='password' placeholder='Password' />
-            <Submit type='button' onClick={e => e.preventDefault()}>
-              Login
-            </Submit>
+            <LoginInput name='email' type='text' placeholder='Email' />
+            <LoginInput
+              name='password'
+              type='password'
+              placeholder='Password'
+            />
+            <Submit>Login</Submit>
           </LoginInputContainer>
           <Link to='/forgot-password'>
             <LoginPasswordStyled>

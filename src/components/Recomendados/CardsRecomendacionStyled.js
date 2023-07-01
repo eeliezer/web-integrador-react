@@ -17,15 +17,16 @@ export const CardsContainer = styled.div`
 export const Card = styled.div`
   display: flex;
   gap: 1rem;
-  height: 300px;
+  height: 330px;
   padding: 1rem 1.7rem;
   border: 1px solid rgba(33, 33, 33, 0.3);
   border-radius: 15px;
   flex-flow: column nowrap;
   -webkit-box-align: center;
   align-items: center;
-  -webkit-box-pack: center;
+  -webkit-box-pack: justify;
   justify-content: space-between;
+  flex-wrap: wrap;
 `;
 
 export const CardImg = styled.img`
@@ -62,5 +63,6 @@ export const CardPrice = styled.span`
   font-size: 1.5rem;
   background: var(--button-bg-red);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 `;

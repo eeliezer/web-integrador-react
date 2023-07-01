@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const ContainerCheckoutStyled = styled.div`
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+  padding: 2rem 2rem;
   flex-wrap: wrap;
-  padding: 2rem 5rem;
+  align-items: center;
 `;

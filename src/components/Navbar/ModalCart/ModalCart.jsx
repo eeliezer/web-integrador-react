@@ -23,6 +23,7 @@ import {
   SubtotalStyled,
   TitleStyled,
   TotalStyled,
+  ContenedorClearCart,
 } from './ModalCartStyles';
 import { ModalOverlayStyled } from '../NavbarStyles';
 import { useDispatch, useSelector } from 'react-redux';
@@ -68,13 +69,20 @@ const ModalCart = () => {
             <MainContainerStyled>
               <TitleStyled>
                 <h1>Tus Productos</h1>
-                <Increase
-                  onClick={() => dispatch(clearCart())}
-                  bgColor='var(--magenta)'
-                  disabled={!cartItems.length}
-                >
-                  <IoMdTrash />
-                </Increase>
+                <ContenedorClearCart>
+                  <span
+                    onClick={() => dispatch(clearCart())}
+                    disabled={!cartItems.length}
+                  >
+                    Vaciar carrito
+                  </span>
+                  <Increase
+                    onClick={() => dispatch(clearCart())}
+                    disabled={!cartItems.length}
+                  >
+                    <IoMdTrash />
+                  </Increase>
+                </ContenedorClearCart>
               </TitleStyled>
 
               <ProductsWrapperStyled>

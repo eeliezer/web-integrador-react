@@ -10,19 +10,39 @@ import {
   LoginContainerStyled,
   LoginEmailStyled,
 } from './RegisterStyles';
+import { registerInitialValues } from '../../formik/initialValues';
+import { registerValidationSchema } from '../../formik/validationSchema';
+import { useDispatch } from 'react-redux';
+import { setCurrentUser } from '../../redux/user/userSlice';
+import { createUser } from '../../axios/axios-user';
 
 const Register = () => {
+  const dispatch = useDispatch();
   return (
     <LoginContainerStyled>
       <h1>Crea tu cuenta</h1>
-      <Formik>
+      <Formik
+        initialValues={registerInitialValues}
+        validationSchema={registerValidationSchema}
+        onSubmit={async (values, actions) => {
+          const { name, email, password } = values;
+          const user = await createUser(name, email, password);
+          actions.resetForm();
+          if (user) {
+            dispatch(
+              setCurrentUser({
+                ...user.usuario,
+                token: user.token,
+              })
+            );
+          }
+        }}
+      >
         <Form>
-          <LoginInput type='text' placeholder='Nombre' />
-          <LoginInput type='text' placeholder='Email' />
-          <LoginInput type='password' placeholder='Password' />
-          <Submit type='button' onClick={e => e.preventDefault()}>
-            Registrarte
-          </Submit>
+          <LoginInput name='name' type='text' placeholder='Nombre' />
+          <LoginInput name='email' type='text' placeholder='Email' />
+          <LoginInput name='password' type='password' placeholder='Password' />
+          <Submit>Registrarte</Submit>
           <p>También puedes iniciar sesión con</p>
           <LoginButtonGoogleStyled
             type='button'

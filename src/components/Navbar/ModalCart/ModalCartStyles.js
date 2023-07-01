@@ -11,7 +11,7 @@ export const ContainerStyled = styled(motion.div)`
   justify-content: space-between;
   gap: 30px;
   width: 450px;
-  height: calc(100vh - 4rem);
+  height: calc(100vh - 0.5rem);
 
   padding: 2rem;
   background-color: var(--background-card-white);
@@ -39,26 +39,29 @@ export const CloseButtonStyled = styled(motion.button)`
 
 export const TitleStyled = styled.div`
   display: flex;
+  margin: 0px;
+  color: rgb(33, 33, 33);
+  -webkit-box-pack: justify;
   justify-content: space-between;
-  align-items: flex-start;
-  margin: 0 0 2rem 0;
-  color: #212121;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: column;
   & h1 {
-    margin-top: 0;
+    margin-top: 2%;
   }
 `;
 
 export const MainContainerStyled = styled.div`
-  height: 55%;
+  height: 70%;
 `;
 
 export const ProductsWrapperStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 25px;
   width: 100%;
-  height: 400px;
+  height: 75%;
   margin: 0 auto;
   padding: 1rem;
   padding-left: 0;
@@ -73,7 +76,7 @@ export const ProductsWrapperStyled = styled.div`
   }
 
   @media (max-height: 800px) {
-    height: 235px;
+    height: 210px;
   }
 `;
 
@@ -125,9 +128,8 @@ export const TextStyled = styled.p`
 export const PriceStyled = styled.span`
   font-weight: 800;
   font-size: 1.3rem;
-  color: #212121;
+  color: black;
   text-decoration: underline;
-  color: white;
 `;
 
 export const PriceContainerStyled = styled.div`
@@ -151,6 +153,7 @@ export const TotalStyled = styled(SubtotalStyled)``;
 
 export const ButtonContainerStyled = styled(SubtotalStyled)`
   justify-content: center;
+  margin-top: 2%;
   button {
     background: var(--button-bg-red);
     color: var(--button-bg-white);
@@ -160,4 +163,9 @@ export const ButtonContainerStyled = styled(SubtotalStyled)`
 export const QuantityContainerStyled = styled.div`
   display: flex;
   align-items: center;
+`;
+
+export const ContenedorClearCart = styled.div`
+  display: flex;
+  cursor: pointer;
 `;

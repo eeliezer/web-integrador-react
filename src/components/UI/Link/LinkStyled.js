@@ -9,7 +9,7 @@ export const StyledLink = styled(Link)`
   outline: none;
   border: none;
   border-radius: ${({ radius }) => `${radius}px`};
-  background: var(--gray-bg-disabled);
+  background: var(--button-bg-white);
   text-transform: uppercase;
   font-weight: 400;
   cursor: pointer;
@@ -18,8 +18,9 @@ export const StyledLink = styled(Link)`
   & span {
     font-weight: 700;
     font-size: 1rem;
-    background: var(--gray-bg-disabled);
+    background: var(--button-bg-red);
+    background-clip: text;
     -webkit-background-clip: text;
-    color: white;
+    color: var(--button-bg-red);
   }
 `;

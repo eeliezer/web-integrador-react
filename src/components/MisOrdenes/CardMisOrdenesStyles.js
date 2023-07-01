@@ -11,7 +11,7 @@ export const MisOrdenesContainerStyled = styled.div`
 `;
 
 export const PedidoContainerStyled = styled.div`
-  background: var(--button-bg-red);
+  background: var(--button-bg-white);
   width: 380px;
   border-radius: 15px;
   padding: 1rem 1.4rem;
@@ -40,7 +40,8 @@ export const IdStyled = styled.p`
 export const PriceStyled = styled.p`
   font-weight: 800;
   font-size: 2rem;
-  background: var(--button-bg-white);
+  background: var(--button-bg-red);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;

@@ -24,20 +24,21 @@ import {
   NavbarSearchBarStyled,
   IconWrapperStyled,
 } from './NavbarStyles';
-
 import { useDispatch, useSelector } from 'react-redux';
+import { toggleHiddenMenu } from '../../redux/user/userSlice';
+
 import { selectCategory } from '../../redux/categories/categoriesSlice';
 
 const Navbar = ({ doScroll }) => {
+  const currentUser = useSelector(state => state.user.currentUser);
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const [value, setValue] = useState('');
 
   const listOfCategories = useSelector(
     state => state.categories.categories
   ).map(category => category.category);
-
-  const dispatch = useDispatch();
 
   const handlerSubmit = (e, value) => {
     e.preventDefault();
@@ -109,9 +110,15 @@ const Navbar = ({ doScroll }) => {
         </motion.div>
         <motion.div whileTap={{ scale: 0.95 }}>
           <UserNavStyled>
-            <UserContainerStyled onClick={() => navigate('/Login')}>
+            <UserContainerStyled
+              onClick={() =>
+                currentUser ? dispatch(toggleHiddenMenu()) : navigate('/login')
+              }
+            >
+              <SpanStyled>
+                {currentUser ? `${currentUser.nombre}` : 'Inicia sesión'}
+              </SpanStyled>
               <FaUserAlt />
-              <SpanStyled>Inicia sesión</SpanStyled>
             </UserContainerStyled>
           </UserNavStyled>
         </motion.div>

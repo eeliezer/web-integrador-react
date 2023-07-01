@@ -15,7 +15,7 @@ export const CardCategoria = styled(motion.div)`
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  width: 180px;
+  width: 190px;
   padding: 1rem 2rem;
   color: ${({ selected }) =>
     selected ? 'var(--background-card-white)' : 'var(--button-bg-red)'};
@@ -23,7 +23,7 @@ export const CardCategoria = styled(motion.div)`
     selected ? 'var(--gray-bg-disabled)' : 'var(--button-bg-white)'};
   border-radius: 5px;
   cursor: pointer;
-
+  align-items: center;
   h2 {
     font-size: 1rem;
   }

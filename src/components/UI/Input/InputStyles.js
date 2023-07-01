@@ -25,15 +25,16 @@ export const InputStyled = styled.input`
   border-radius: 8px;
   height: 30px;
   padding: 0.5rem 1rem;
-  color: white;
+  color: black;
   width: 70%;
   margin-top: 1rem;
   font-family: 'Quantico', sans-serif;
 
   ::placeholder {
     opacity: 60%;
+    color: black;
   }
-  -webkit-text-fill-color: #fff;
+  -webkit-text-fill-color: black;
 
   :-webkit-autofill,
   :-webkit-autofill:hover,

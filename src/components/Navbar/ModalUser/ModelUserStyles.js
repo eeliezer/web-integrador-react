@@ -4,14 +4,17 @@ import { Link } from 'react-router-dom';
 
 export const ModalContainerStyled = styled(motion.div)`
   position: absolute;
-  background-color: var(--gray-bg-disabled);
-  box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.3);
+  background-color: var(--button-bg-white);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 50px 20px;
   width: 450px;
   top: 100px;
-  right: 0;
+  right: 0px;
   z-index: 98;
-  border-radius: 1rem 0 0 1rem;
+  border-radius: 1rem 0px 0px 1rem;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   & span {
     display: flex;
@@ -32,8 +35,11 @@ export const LinkStyled = styled(Link)`
 
 export const UsernameStyled = styled.h2`
   font-weight: 400;
+  color: var(--button-bg-red);
 `;
 
 export const HrStyled = styled.hr`
-  margin: 2rem 0;
+  margin: 1rem 0;
+  border: 0;
+  border-top: 0.15rem solid;
 `;

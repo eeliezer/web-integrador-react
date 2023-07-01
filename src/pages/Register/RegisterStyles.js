@@ -8,7 +8,7 @@ export const LoginContainerStyled = styled.div`
   align-items: center;
   justify-content: center;
   gap: 20px;
-  margin-top: 20px;
+  margin-top: 4%;
   color: #fff;
   font-weight: 600;
   height: 60vh;

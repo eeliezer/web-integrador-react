@@ -27,7 +27,7 @@ const CardProductCheckout = ({ img, title, desc, price, quantity, id }) => {
       <CardInfoStyled>
         <ProductTitleStyled>{title}</ProductTitleStyled>
         <TextStyled>{desc}</TextStyled>
-        <PriceStyled>{formatPrice(price)}</PriceStyled>
+        <PriceStyled>Precio: {formatPrice(price)}</PriceStyled>
       </CardInfoStyled>
       <QuantityContainerStyled>
         <Increase

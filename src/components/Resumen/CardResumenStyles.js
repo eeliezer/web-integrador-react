@@ -2,31 +2,52 @@ import styled from 'styled-components';
 
 export const ProductStyled = styled.div`
   display: flex;
-  justify-content: space-between;
-  background: var(--gray-bg-disabled);
+  -webkit-box-pack: justify;
+  background: var(--button-bg-white);
   border-radius: 15px;
   padding: 1.5rem 1rem;
-  width: 90%;
+  width: 100%;
   max-width: 620px;
+  flex-direction: column;
+  align-items: center;
 `;
 
-export const ProductLeftStyled = styled.div`
+export const ProductCenterStyled = styled.div`
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
   align-items: center;
-  gap: 20px;
+  flex-direction: column;
+  color: var(--button-bg-red);
+  h3 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
 `;
 
 export const PriceContainerStyled = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   align-items: flex-end;
+  color: red;
 `;
 
 export const ProductPriceStyled = styled.span`
   font-weight: 800;
   font-size: 2rem;
-  background: var(--gray-bg-disabled);
+  background: black;
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+`;
+
+export const ProductInfoTitle = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 `;

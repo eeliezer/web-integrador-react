@@ -1,7 +1,7 @@
 import React from 'react';
 import { ContainerLinkStyled, StyledLink } from './LinkStyled';
 
-const Link = ({ radius = '32', to = '/' }) => {
+const Link = ({ radius = '5', to = '/' }) => {
   return (
     <ContainerLinkStyled whileTap={{ scale: 0.95 }}>
       <StyledLink radius={radius} to={to}>

@@ -6,12 +6,19 @@ export const TextStyled = styled.div`
   justify-content: center;
   align-items: center;
   height: calc(70vh - 100px);
+  margin-top: 5%;
+  button {
+    background-color: var(--button-bg-white);
+    color: var(--button-bg-red);
+  }
 `;
 
 export const TitleStyled = styled.h1`
-  background: var(--gray-bg-disabled);
+  color: var(--button-bg-white);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: 5%;
+  font-size: 3rem;
 `;
 
 export const ContainerInfoStyled = styled.div`
@@ -19,12 +26,7 @@ export const ContainerInfoStyled = styled.div`
 
   & p {
     margin-bottom: 50px;
+    color: var(--button-bg-white);
+    font-size: 1rem;
   }
-`;
-
-export const PatternStyled = styled.img`
-  width: 100%;
-  position: fixed;
-  z-index: -100000000;
-  bottom: -80px;
 `;

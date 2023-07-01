@@ -7,6 +7,7 @@ export const GlobalStyles = createGlobalStyle`
     --button-bg-red: #ED1703;
     --gray-bg-disabled: #212121;
     --background-card-white: #ffffff;
+    --bg-blue: #252850;
   }
 
   html{

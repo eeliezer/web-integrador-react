@@ -1,14 +1,16 @@
 import styled from 'styled-components';
 
 export const ProductosContainerStyled = styled.div`
-  width: 40%;
+  width: 45%;
 `;
 
 export const ProductsTitleStyled = styled.h2`
   font-weight: 500;
-  font-size: 22px;
+  font-size: 1.5rem;
   color: var(--button-bg-white);
   text-transform: uppercase;
+  text-align: center;
+  margin-top: 5%;
 `;
 
 export const CardsWrapperStyled = styled.div`
@@ -76,6 +78,7 @@ export const PriceTotalStyled = styled.span`
 export const HrStyled = styled.hr`
   margin: 1rem 0;
   color: var(--button-bg-white);
+  opacity: 1;
 `;
 
 export const TextEmpty = styled.p`

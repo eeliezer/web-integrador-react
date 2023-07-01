@@ -4,7 +4,6 @@ import Button from '../../components/UI/Button/Button';
 
 import {
   ContainerInfoStyled,
-  PatternStyled,
   TextStyled,
   TitleStyled,
 } from './FelicitacionesStyled';
@@ -15,7 +14,7 @@ const Felicitaciones = () => {
     <div>
       <TextStyled>
         <img
-          src='https://res.cloudinary.com/divurmndi/image/upload/v1684453130/red-check-mark-transparent-background-222_mr2ccb.png'
+          src='https://res.cloudinary.com/divurmndi/image/upload/v1688009191/red-check-mark-transparent-background-222_mr2ccb2_oflzvm.png'
           alt='Check Ok'
         />
         <ContainerInfoStyled>
@@ -24,11 +23,6 @@ const Felicitaciones = () => {
         </ContainerInfoStyled>
         <Button onClick={() => navigate('/mis-ordenes')}>Volver</Button>
       </TextStyled>
-      <PatternStyled
-        src='https://res.cloudinary.com/divurmndi/image/upload/v1684453895/tile_background2_i1sfpg.png'
-        alt=''
-        className='pattern'
-      />
     </div>
   );
 };

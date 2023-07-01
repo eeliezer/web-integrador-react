@@ -7,7 +7,7 @@ export const LoginContainerStyled = styled.div`
   align-items: center;
   justify-content: center;
   gap: 20px;
-  margin-top: 20px;
+  margin-top: 4%;
   font-family: 'Quantico', sans-serif;
   color: #fff;
   height: 60vh;

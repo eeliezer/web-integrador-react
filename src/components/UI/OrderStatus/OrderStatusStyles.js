@@ -3,23 +3,23 @@ import styled from 'styled-components';
 export const StatusStyled = styled.span`
   text-align: center;
   position: absolute;
-  width: 2rem;
-  height: 1rem;
+  width: 2.1rem;
+  height: 2.3rem;
   top: 1rem;
   right: 1rem;
-  border-radius: 1rem;
+  border-radius: 0.3rem;
   padding: 0.3rem;
   font-family: 'Quantico', sans-serif;
 `;
 
 export const CheckStyled = styled(StatusStyled)`
-  background: #15be77;
+  background: #18b000;
 `;
 
 export const PendingStyled = styled(StatusStyled)`
-  background: #ffa100;
+  background: #eeee00;
 `;
 
 export const CancelStyled = styled(StatusStyled)`
-  background: #ff005c;
+  background: #ee0000;
 `;

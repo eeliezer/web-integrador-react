@@ -3,12 +3,19 @@ import styled from 'styled-components';
 
 export const ResumenContainerStyled = styled.div`
   padding: 2rem 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
 `;
 
 export const ResumenTitleStyled = styled.div`
+  color: var(--button-bg-white);
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  margin-bottom: 2%;
 `;
 
 export const StyledLink = styled(Link)`
@@ -16,7 +23,7 @@ export const StyledLink = styled(Link)`
   outline: none;
   border: none;
   border-radius: ${({ borderRadius }) => `${borderRadius}px`};
-  background: var(--gray-bg-disabled);
+  background: var(--button-bg-white);
   text-transform: uppercase;
   font-weight: 400;
   cursor: pointer;
@@ -24,7 +31,8 @@ export const StyledLink = styled(Link)`
   & span {
     font-weight: 800;
     font-size: 1rem;
-    background: var(--gray-bg-disabled);
+    background: var(--button-bg-white);
+    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
   }
@@ -32,20 +40,18 @@ export const StyledLink = styled(Link)`
 
 export const ProductsContainerStyled = styled.div`
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
-  flex-wrap: wrap;
-`;
-
-export const HrStyled = styled.hr`
-  margin: 4rem 0;
+  align-items: center;
+  flex-direction: column;
 `;
 
 export const ResumenContainerInfoStyled = styled.div`
   width: 500px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  color: var(--button-bg-white);
+  margin-top: 5%;
+  margin-bottom: 5%;
 `;
 
 export const CostoProductoStyled = styled.div`
@@ -65,4 +71,14 @@ export const CostoTotalStyled = styled(CostoProductoStyled)`
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
+  font-size: 1.2rem;
+  color: black;
+`;
+
+export const HrEstilado = styled.hr`
+  margin: 1rem 0;
+  color: white;
+  border: 0;
+  border-top: 0.15rem solid;
+  opacity: 1;
 `;
