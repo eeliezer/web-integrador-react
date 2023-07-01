@@ -20,7 +20,11 @@ const ForgotPassword = () => {
       <h1>Reestablece tu contraseña</h1>
       <Formik>
         <Form>
-          <LoginInput type='text' placeholder='Correo de recuperación' />
+          <LoginInput
+            name='email'
+            type='text'
+            placeholder='Correo de recuperación'
+          />
           <ButtonContainer>
             <ForgotEmailStyled onClick={() => navigate('/login')}>
               Volver a Iniciar sesión

@@ -20,18 +20,18 @@ export const LoginInputStyled = styled.input`
     opacity: 80%;
     color: var(--button-bg-red);
   }
-  -webkit-text-fill-color: var(--gray-bg-disabled);
+  -webkit-text-fill-color: white;
 
   :-webkit-autofill,
   :-webkit-autofill:hover,
   :-webkit-autofill:focus {
-    -webkit-box-shadow: 0 0 0px 1000px var(yellow) inset;
+    -webkit-box-shadow: 0 0 0px 1000px gray inset;
   }
 `;
 
 export const ErrorMessageStyled = styled.p`
   margin: 0;
   margin-top: 5px;
-  color: blue;
+  color: var(--button-bg-white);
   font-size: 14px;
 `;

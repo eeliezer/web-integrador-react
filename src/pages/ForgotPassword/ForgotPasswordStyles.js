@@ -7,7 +7,7 @@ export const ForgotContainerStyled = styled.div`
   align-items: center;
   justify-content: center;
   gap: 20px;
-  margin-top: 20px;
+  margin-bottom: 5%;
   height: calc(100vh - 400px);
   h1 {
     color: var(--button-bg-white);
@@ -41,6 +41,8 @@ export const ForgotEmailStyled = styled.p`
 
 export const ButtonContainer = styled.div`
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
   gap: 5px;
+  flex-direction: column;
+  align-items: center;
 `;
