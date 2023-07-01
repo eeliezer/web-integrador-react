@@ -12,6 +12,18 @@ export const CardsContainer = styled.div`
   overflow: hidden;
   align-items: center;
   justify-items: center;
+  @media (max-width: 769px) {
+    height: 360px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    overflow: scroll;
+    -webkit-box-align: center;
+    place-items: center;
+  }
 `;
 
 export const Card = styled.div`

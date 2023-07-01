@@ -7,6 +7,15 @@ export const CategoriasContainer = styled.div`
   align-items: center;
   gap: 20px;
   user-select: none;
+  @media (max-width: 769px) {
+    display: flex;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 20px;
+    user-select: none;
+    flex-wrap: wrap;
+  }
 `;
 
 export const CardCategoria = styled(motion.div)`

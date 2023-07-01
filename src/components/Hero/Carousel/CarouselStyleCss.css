@@ -15,3 +15,17 @@
   overflow: hidden;
   height: 500px;
 }
+
+.image2 {
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+  .image1 {
+    display: none;
+  }
+
+  .image2 {
+    display: block;
+  }
+}

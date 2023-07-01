@@ -8,6 +8,16 @@ export const ProductosContainer = styled.div`
   row-gap: 3.5rem;
   width: 100%;
   padding: 1rem 0;
+  @media (max-width: 769px) {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 0px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 `;
 
 export const ProductosCard = styled.div`
@@ -46,5 +56,6 @@ export const CardPrice = styled.span`
   font-size: 1.75rem;
   background: var(--button-bg-red);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 `;

@@ -5,9 +5,7 @@ export const CardContainerStyled = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 15px;
-
   width: 85%;
-
   background: var(--background-card-white);
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
   padding: 1rem;
@@ -18,6 +16,10 @@ export const CardContainerStyled = styled.div`
     height: 80px;
     border-radius: 16px;
     object-fit: cover;
+  }
+
+  @media (max-width: 769px) {
+    flex-direction: column;
   }
 `;
 

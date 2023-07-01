@@ -15,8 +15,13 @@ const CarouselComponent = () => {
       <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item className='custom-carousel'>
           <img
-            className='d-block'
+            className='d-block image1'
             src='https://cdn.powered-by-nitrosell.com/store_images/23/5660/image_carousel/WBImagination.jpg'
+            alt='Third slide'
+          />
+          <img
+            className='d-block image2'
+            src='https://res.cloudinary.com/divurmndi/image/upload/v1688194360/WBImagination2_jvclle.jpg'
             alt='Third slide'
           />
 

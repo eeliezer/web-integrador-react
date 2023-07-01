@@ -12,11 +12,27 @@ export const ContainerStyled = styled(motion.div)`
   gap: 30px;
   width: 450px;
   height: calc(100vh - 0.5rem);
-
   padding: 2rem;
   background-color: var(--background-card-white);
   border-radius: 0 0 0 1rem;
   box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.3);
+  @media (max-width: 769px) {
+    position: fixed;
+    top: -28px;
+    right: 0px;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    gap: 30px;
+    width: 450px;
+    height: calc(-9.5rem + 100vh);
+    padding: 2rem;
+    background-color: var(--background-card-white);
+    border-radius: 0px 0px 0px 1rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 25px 10px;
+  }
 `;
 
 export const CloseButtonContainerStyled = styled.div`
@@ -53,6 +69,9 @@ export const TitleStyled = styled.div`
 
 export const MainContainerStyled = styled.div`
   height: 70%;
+  @media (max-width: 769px) {
+    height: 73%;
+  }
 `;
 
 export const ProductsWrapperStyled = styled.div`
@@ -77,6 +96,18 @@ export const ProductsWrapperStyled = styled.div`
 
   @media (max-height: 800px) {
     height: 210px;
+  }
+  @media (max-width: 769px) {
+    display: flex;
+    flex-direction: column;
+    -moz-box-align: center;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    height: 75%;
+    margin: 0px auto;
+    padding: 1rem 1rem 1rem 0px;
+    overflow: scroll;
   }
 `;
 
