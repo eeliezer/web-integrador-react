@@ -21,6 +21,9 @@ export const Form = styled(FormikForm)`
   justify-content: center;
   padding: 0.8rem 1.5rem;
   gap: 20px;
+  input {
+    -webkit-text-fill-color: black;
+  }
   button {
     background: var(--button-bg-white);
     color: #ed1703;

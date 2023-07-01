@@ -20,7 +20,6 @@ export const Form = styled(FormikForm)`
   justify-content: center;
   padding: 0 2rem;
   gap: 20px;
-
   p {
     color: #fff;
   }
@@ -53,6 +52,7 @@ export const LoginInputContainer = styled.div`
     padding: 1rem 2rem;
     border-radius: 5px;
     padding: 0.8rem 2rem;
+    -webkit-text-fill-color: black;
   }
 `;
 
