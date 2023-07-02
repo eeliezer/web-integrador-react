@@ -4,12 +4,7 @@ import { Formik } from 'formik';
 import LoginInput from '../../components/UI/LoginInput/LoginInput';
 import Submit from '../../components/UI/Submit/Submit';
 
-import {
-  Form,
-  LoginButtonGoogleStyled,
-  LoginContainerStyled,
-  LoginEmailStyled,
-} from './RegisterStyles';
+import { Form, LoginContainerStyled, LoginEmailStyled } from './RegisterStyles';
 import { registerInitialValues } from '../../formik/initialValues';
 import { registerValidationSchema } from '../../formik/validationSchema';
 import { useDispatch } from 'react-redux';
@@ -43,17 +38,6 @@ const Register = () => {
           <LoginInput name='email' type='text' placeholder='Email' />
           <LoginInput name='password' type='password' placeholder='Password' />
           <Submit>Registrarte</Submit>
-          <p>También puedes iniciar sesión con</p>
-          <LoginButtonGoogleStyled
-            type='button'
-            onClick={e => e.preventDefault()}
-          >
-            <img
-              src='https://res.cloudinary.com/dcatzxqqf/image/upload/v1656648432/coding/NucbaZappi/Assets/google-icon_jgdcr1.png'
-              alt='Google logo'
-            />
-            Google
-          </LoginButtonGoogleStyled>
           <LoginEmailStyled to='/login'>
             <p>¿Ya tienes cuenta? Inicia sesión aquí</p>
           </LoginEmailStyled>

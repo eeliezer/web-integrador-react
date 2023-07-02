@@ -11,6 +11,17 @@ export const CheckoutDatosStyled = styled.div`
   align-items: center;
   flex-wrap: wrap;
 
+  @media (max-width: 769px) {
+    width: 100%;
+    margin: 0px auto;
+    color: var(--button-bg-white);
+    text-transform: uppercase;
+    display: flex;
+    flex-flow: column wrap;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+
   @media (max-width: 481px) {
     width: 100%;
     margin-top: 20%;
@@ -28,6 +39,13 @@ export const Formik = styled(FormikContainer)`
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+
+  @media (max-width: 769px) {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
 
   @media (max-width: 481px) {
     display: flex;

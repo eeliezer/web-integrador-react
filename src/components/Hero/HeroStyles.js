@@ -12,6 +12,13 @@ export const HeroContainerStyled = styled.div`
     margin-bottom: 2rem;
     font-family: 'Quantico', sans-serif;
   }
+
+  @media (max-width: 769px) {
+    display: flex;
+    color: var(--button-bg-white);
+    gap: 75px;
+    flex-direction: column;
+  }
 `;
 
 export const LogoHeroimg = styled.img`

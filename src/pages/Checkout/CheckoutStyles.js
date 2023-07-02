@@ -7,6 +7,15 @@ export const ContainerCheckoutStyled = styled.div`
   flex-wrap: wrap;
   align-items: center;
 
+  @media (max-width: 769px) {
+    display: flex;
+    -webkit-box-pack: justify;
+    padding: 2rem;
+    -webkit-box-align: center;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
   @media (max-width: 481px) {
     display: flex;
     -webkit-box-pack: justify;

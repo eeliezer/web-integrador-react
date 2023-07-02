@@ -33,11 +33,15 @@ const CarouselComponent = () => {
 
         <Carousel.Item>
           <img
-            className='d-block'
+            className='d-block image1'
             src='https://www.anteikumangas.com/imagenes/Jujutsu%20PC.png'
             alt='Second slide'
           />
-
+          <img
+            className='d-block image2'
+            src='https://res.cloudinary.com/divurmndi/image/upload/v1688263450/Jujutsu_PC2_tjrgtg.png'
+            alt='Second slide'
+          />
           {/*           <Carousel.Caption>
             <h3>Segundo Slide</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -46,11 +50,15 @@ const CarouselComponent = () => {
 
         <Carousel.Item>
           <img
-            className='d-block'
+            className='d-block image1'
             src='https://cdn.shopify.com/s/files/1/0543/4293/files/HeroSpots-Spring2023-03234_1920x.jpg?v=1679925208'
             alt='Third slide'
           />
-
+          <img
+            className='d-block image2'
+            src='https://res.cloudinary.com/divurmndi/image/upload/v1688263450/HeroSpots-Spring2023-03234_1920x2_pzupst.png'
+            alt='Third slide'
+          />
           {/*           <Carousel.Caption>
             <h3>Tercer slide</h3>
             <p>

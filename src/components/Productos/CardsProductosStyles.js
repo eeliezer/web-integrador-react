@@ -45,11 +45,13 @@ export const ProductosCard = styled.div`
     font-weight: 600;
     margin: 0;
     color: var(--button-bg-red);
-    font-size: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
   }
   p {
     color: var(--gray-bg-disabled);
     font-size: 1.2rem;
+    text-align: center;
   }
 
   @media (max-width: 481px) {
@@ -64,22 +66,23 @@ export const ProductosCard = styled.div`
     -webkit-box-align: center;
     align-items: center;
     justify-content: space-around;
-  }
-  img {
-    width: 50%;
-    margin-bottom: 1rem;
-  }
-  h2 {
-    text-transform: uppercase;
-    font-size: 1rem;
-    text-align: center;
-    margin: 0px;
-  }
-  p {
-    color: var(--gray-bg-disabled);
-    font-size: 0.8rem;
-    text-align: center;
-    margin: 0;
+
+    img {
+      width: 50%;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      text-transform: uppercase;
+      font-size: 1rem;
+      text-align: center;
+      margin: 0px;
+    }
+    p {
+      color: var(--gray-bg-disabled);
+      font-size: 0.8rem;
+      text-align: center;
+      margin: 0;
+    }
   }
 `;
 

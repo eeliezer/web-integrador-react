@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const InputContainerStyled = styled.div`
   display: flex;
   flex-direction: column;
+  height: 50px;
 `;
 
 export const LoginInputStyled = styled.input`

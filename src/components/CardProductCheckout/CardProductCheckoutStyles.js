@@ -19,6 +19,17 @@ export const CardContainerStyled = styled.div`
   }
 
   @media (max-width: 769px) {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 15px;
+    width: 50%;
+    background: var(--background-card-white);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px 5px;
+    padding: 1rem;
+    border-radius: 15px;
     flex-direction: column;
   }
 

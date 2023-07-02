@@ -12,7 +12,7 @@ export const LoginContainerStyled = styled.div`
   color: #fff;
   font-weight: 600;
   height: 60vh;
-
+  text-transform: uppercase;
   @media (max-width: 481px) {
     display: flex;
     flex-direction: column;
@@ -38,7 +38,7 @@ export const Form = styled(FormikForm)`
   align-items: center;
   justify-content: center;
   padding: 0.8rem 1.5rem;
-  gap: 20px;
+  gap: 35px;
   input {
     -webkit-text-fill-color: black;
   }

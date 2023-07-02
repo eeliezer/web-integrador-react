@@ -3,6 +3,11 @@ import styled from 'styled-components';
 export const ProductosContainerStyled = styled.div`
   width: 45%;
 
+  @media (max-width: 769px) {
+    width: 85%;
+    margin-bottom: 10%;
+  }
+
   @media (max-width: 481px) {
     width: 100%;
   }
@@ -15,6 +20,10 @@ export const ProductsTitleStyled = styled.h2`
   text-transform: uppercase;
   text-align: center;
   margin-top: 5%;
+
+  @media (max-width: 769px) {
+    font-size: 1.8rem;
+  }
 `;
 
 export const CardsWrapperStyled = styled.div`
@@ -51,6 +60,10 @@ export const CardsWrapperStyled = styled.div`
     width: 100%;
   }
 
+  @media (max-width: 769px) {
+    width: 100%;
+  }
+
   @media (max-width: 481px) {
     width: 100%;
     height: 300px;
@@ -66,6 +79,17 @@ export const PriceContainerStyled = styled.div`
   justify-content: center;
   color: var(--button-bg-white);
   text-transform: uppercase;
+
+  @media (max-width: 769px) {
+    margin: 2rem auto 0px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: var(--button-bg-white);
+    text-transform: uppercase;
+  }
 `;
 
 export const SubtotalStyled = styled.div`

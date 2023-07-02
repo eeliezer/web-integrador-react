@@ -7,11 +7,10 @@ export const LoginContainerStyled = styled.div`
   align-items: center;
   justify-content: center;
   gap: 20px;
-  margin-top: 4%;
   font-family: 'Quantico', sans-serif;
   color: #fff;
   height: 60vh;
-
+  text-transform: uppercase;
   @media (max-width: 481px) {
     display: flex;
     flex-direction: column;
@@ -87,6 +86,7 @@ export const LoginInputContainer = styled.div`
   flex-direction: row;
   align-items: center;
   gap: 15px;
+  margin-bottom: 2%;
   input {
     padding: 1rem 2rem;
     border-radius: 5px;

@@ -17,15 +17,23 @@
 }
 
 .image2 {
-  display: none;
+  display: none !important;
 }
 
 @media screen and (max-width: 769px) {
   .image1 {
-    display: none;
+    display: none !important;
   }
 
   .image2 {
-    display: block;
+    display: block !important;
+  }
+
+  .custom-carousel-inner {
+    position: relative;
+    width: 645px;
+    overflow: hidden;
+    height: 500px;
+    margin-top: 1px;
   }
 }
