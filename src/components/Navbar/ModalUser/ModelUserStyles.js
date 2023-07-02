@@ -7,7 +7,7 @@ export const ModalContainerStyled = styled(motion.div)`
   background-color: var(--button-bg-white);
   box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 50px 20px;
   width: 450px;
-  top: 100px;
+  top: 123px;
   right: 0px;
   z-index: 98;
   border-radius: 1rem 0px 0px 1rem;
