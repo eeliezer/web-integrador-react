@@ -26,6 +26,15 @@ export const ResumenTitleStyled = styled.div`
   flex-direction: column;
   align-items: center;
   margin-bottom: 2%;
+
+  @media (max-width: 721px) {
+    h1 {
+    }
+
+    h2 {
+    }
+  }
+
   @media (max-width: 481px) {
     color: var(--button-bg-white);
     display: flex;
@@ -70,6 +79,10 @@ export const ResumenContainerInfoStyled = styled.div`
   color: var(--button-bg-white);
   margin-top: 5%;
   margin-bottom: 5%;
+
+  @media (max-width: 721px) {
+    width: 420px;
+  }
 
   @media (max-width: 481px) {
     width: 300px;

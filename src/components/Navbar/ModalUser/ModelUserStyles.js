@@ -26,6 +26,11 @@ export const ModalContainerStyled = styled(motion.div)`
     }
   }
 
+  @media (max-width: 803px) {
+    top: 23.3%;
+    width: 320px;
+  }
+
   @media (max-width: 769px) {
     position: absolute;
     background-color: var(--button-bg-white);

@@ -7,6 +7,7 @@ export const CategoriasContainer = styled.div`
   align-items: center;
   gap: 20px;
   user-select: none;
+  flex-wrap: wrap;
 
   @media (max-width: 803px) {
     display: flex;

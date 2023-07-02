@@ -8,6 +8,7 @@ export const HeroContainerStyled = styled.div`
   align-items: center;
   color: var(--button-bg-white);
   gap: 75px;
+  width: 100%;
   h1 {
     margin-bottom: 2rem;
     font-family: 'Quantico', sans-serif;
@@ -19,6 +20,10 @@ export const HeroContainerStyled = styled.div`
     gap: 75px;
     flex-direction: column;
   }
+`;
+
+export const ContainerCarousel = styled.div`
+  width: 100%;
 `;
 
 export const LogoHeroimg = styled.img`

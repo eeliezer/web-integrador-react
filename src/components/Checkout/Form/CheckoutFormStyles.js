@@ -54,13 +54,24 @@ export const Formik = styled(FormikContainer)`
     align-items: flex-start;
   }
 `;
+
 export const Form = styled(FormikForm)`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
-  input {
-    @media (max-width: 481px) {
+  @media (max-width: 721px) {
+    display: flex;
+    -webkit-box-pack: justify;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+
+  @media (max-width: 481px) {
+    input {
       display: flex;
       margin: 1rem 0px;
       flex-direction: column;

@@ -7,6 +7,9 @@ export const InputBoxStyled = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   width: 50%;
+  @media (max-width: 481px) {
+    width: 100%;
+  }
 `;
 
 export const InputLabelStyled = styled.label`

@@ -35,6 +35,11 @@ export const ContainerStyled = styled(motion.div)`
     box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 25px 10px;
   }
 
+  @media (max-width: 721px) {
+    width: 600px;
+    height: 1020px;
+  }
+
   @media (max-width: 481px) {
     position: fixed;
     top: -28px;
@@ -46,7 +51,7 @@ export const ContainerStyled = styled(motion.div)`
     justify-content: space-between;
     gap: 30px;
     width: 320px;
-    height: 580px;
+    height: 480px;
     overflow: auto;
     background-color: var(--background-card-white);
     border-radius: 0px 0px 0px 1rem;

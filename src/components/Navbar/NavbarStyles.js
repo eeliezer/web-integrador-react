@@ -44,6 +44,17 @@ export const NavbarContainerStyled = styled.div`
 export const LogoImg = styled.img`
   width: 300px;
   height: auto;
+
+  @media (max-width: 1099px) {
+    width: 200px;
+  }
+
+  @media (max-width: 996px) {
+    width: 150px;
+  }
+  @media (max-width: 803px) {
+    width: 300px;
+  }
 `;
 
 export const ModalOverlayStyled = styled(motion.div)`
@@ -51,8 +62,8 @@ export const ModalOverlayStyled = styled(motion.div)`
   top: 0;
   left: 0;
   z-index: 50;
-  width: calc(100vw - 450px);
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 
   ${({ isHidden }) =>
     !isHidden &&
@@ -155,16 +166,26 @@ export const NavbarBuscador = styled.div`
   h1 {
     color: var(--button-bg-red);
     font-size: 2rem;
+    text-align: center;
   }
 
-  @media (max-width: 481px) {
+  @media (max-width: 1020px) {
     display: flex;
     flex-direction: column;
     align-items: center;
     h1 {
-      color: var(--button-bg-red);
-      font-size: 1rem;
-      margin-top: 5%;
+      font-size: 1.4rem;
+    }
+
+    @media (max-width: 481px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        color: var(--button-bg-red);
+        font-size: 1rem;
+        margin-top: 5%;
+      }
     }
   }
 `;
@@ -208,6 +229,10 @@ export const NavbarSearchBarStyled = styled.input`
   color: white;
   font-weight: 600;
   font-family: Quantico, sans-serif;
+
+  @media (max-width: 1020px) {
+    width: 200px;
+  }
 
   @media (max-width: 481px) {
     background-color: var(--button-bg-red);

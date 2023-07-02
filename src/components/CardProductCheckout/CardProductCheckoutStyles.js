@@ -18,6 +18,39 @@ export const CardContainerStyled = styled.div`
     object-fit: cover;
   }
 
+  @media (max-width: 1281px) {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    gap: 15px;
+    width: 85%;
+    background: var(--background-card-white);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px 5px;
+    padding: 1rem;
+    border-radius: 15px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  @media (max-width: 803px) {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 15px;
+    width: 60%;
+    background: var(--background-card-white);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px 5px;
+    padding: 1rem;
+    border-radius: 15px;
+    flex-direction: column;
+    text-align: center;
+  }
+
   @media (max-width: 769px) {
     display: flex;
     -webkit-box-pack: justify;
@@ -25,7 +58,7 @@ export const CardContainerStyled = styled.div`
     -webkit-box-align: center;
     align-items: center;
     gap: 15px;
-    width: 50%;
+    width: 55%;
     background: var(--background-card-white);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px 5px;
     padding: 1rem;
@@ -50,11 +83,10 @@ export const CardInfoStyled = styled.div`
   display: flex;
   flex-direction: column;
   gap: 5px;
-  width: 240px;
+  width: 100%;
 
   @media (max-width: 481px) {
     align-items: center;
-    width: 200px;
   }
 `;
 
@@ -63,6 +95,7 @@ export const ProductTitleStyled = styled.h3`
   margin-bottom: 2px;
   font-weight: 500;
   font-size: 0.9rem;
+
   @media (max-width: 481px) {
     align-items: center;
   }
@@ -83,7 +116,7 @@ export const PriceStyled = styled.span`
   background-clip: text;
   -webkit-text-fill-color: transparent;
   @media (max-width: 481px) {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 `;
 

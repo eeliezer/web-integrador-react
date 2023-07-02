@@ -27,6 +27,7 @@
 
   .image2 {
     display: block !important;
+    width: 100%;
   }
 
   .custom-carousel-inner {

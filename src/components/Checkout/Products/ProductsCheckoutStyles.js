@@ -36,7 +36,7 @@ export const CardsWrapperStyled = styled.div`
   margin: 0 auto;
   color: var(--button-bg-red);
   text-transform: uppercase;
-  overflow: scroll;
+  overflow: auto;
 
   &::-webkit-scrollbar {
     background: transparent;
