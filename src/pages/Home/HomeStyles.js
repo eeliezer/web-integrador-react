@@ -17,7 +17,7 @@ export const HomeWrapper = styled.div`
 export const CategoriasWrapper = styled.section`
   margin-top: 2%;
   @media (max-width: 481px) {
-    margin-top: 2rem;
+    margin-top: 0rem;
     h2 {
       text-align: center;
       text-transform: uppercase;
