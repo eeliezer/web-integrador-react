@@ -6,4 +6,14 @@ export const ContainerCheckoutStyled = styled.div`
   padding: 2rem 2rem;
   flex-wrap: wrap;
   align-items: center;
+
+  @media (max-width: 481px) {
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-box-align: center;
+    text-align: center;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    padding: 2rem;
+  }
 `;

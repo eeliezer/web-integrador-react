@@ -2,6 +2,10 @@ import styled from 'styled-components';
 
 export const ProductosContainerStyled = styled.div`
   width: 45%;
+
+  @media (max-width: 481px) {
+    width: 100%;
+  }
 `;
 
 export const ProductsTitleStyled = styled.h2`
@@ -45,6 +49,11 @@ export const CardsWrapperStyled = styled.div`
 
   @media (max-width: 1500px) {
     width: 100%;
+  }
+
+  @media (max-width: 481px) {
+    width: 100%;
+    height: 300px;
   }
 `;
 

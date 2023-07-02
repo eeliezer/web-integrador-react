@@ -12,6 +12,21 @@ export const ForgotContainerStyled = styled.div`
   h1 {
     color: var(--button-bg-white);
   }
+
+  @media (max-width: 481px) {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15%;
+    margin-bottom: 20%;
+    height: calc(140vh - 400px);
+    text-align: center;
+    text-transform: uppercase;
+  }
 `;
 
 export const Form = styled(FormikForm)`

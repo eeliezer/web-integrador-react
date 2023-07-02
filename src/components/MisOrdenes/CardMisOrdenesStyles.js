@@ -8,6 +8,16 @@ export const MisOrdenesContainerStyled = styled.div`
   gap: 20px;
   max-width: 1500px;
   margin: 0 auto;
+  @media (max-width: 481px) {
+    max-width: 300px;
+    height: 100%;
+    background-color: var(--button-bg-red);
+    min-height: calc(100vh - 500px);
+    margin: 5% auto;
+    padding: 2rem 0px;
+    text-align: center;
+    text-transform: uppercase;
+  }
 `;
 
 export const PedidoContainerStyled = styled.div`
@@ -30,6 +40,10 @@ export const TextContainerStyled = styled.div`
 export const TitleStyled = styled.h2`
   margin: 0;
   font-size: 1.2rem;
+
+  @media (max-width: 481px) {
+    font-size: 1rem;
+  }
 `;
 
 export const IdStyled = styled.p`

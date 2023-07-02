@@ -15,6 +15,7 @@ export const HomeWrapper = styled.div`
 export const CategoriasWrapper = styled.section`
   margin-top: 8rem;
   @media (max-width: 481px) {
+    margin-top: 2rem;
     h2 {
       text-align: center;
       text-transform: uppercase;
@@ -25,6 +26,7 @@ export const CategoriasWrapper = styled.section`
 export const ProductosWrapper = styled.section`
   padding-top: 5rem;
   @media (max-width: 481px) {
+    padding-top: 2rem;
     h2 {
       text-transform: uppercase;
       font-size: 1.3rem;

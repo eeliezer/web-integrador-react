@@ -25,6 +25,21 @@ export const ModalContainerStyled = styled(motion.div)`
       opacity: 90%;
     }
   }
+
+  @media (max-width: 481px) {
+    position: absolute;
+    background-color: var(--button-bg-white);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 50px 20px;
+    width: 320px;
+    top: 300px;
+    z-index: 98;
+    border-radius: 0rem 0px 0px 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+  }
 `;
 
 export const LinkStyled = styled(Link)`

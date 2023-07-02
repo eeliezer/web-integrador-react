@@ -11,6 +11,18 @@ export const TextStyled = styled.div`
     background-color: var(--button-bg-white);
     color: var(--button-bg-red);
   }
+
+  @media (max-width: 481px) {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
 `;
 
 export const TitleStyled = styled.h1`
@@ -19,6 +31,10 @@ export const TitleStyled = styled.h1`
   background-clip: text;
   margin-top: 5%;
   font-size: 3rem;
+
+  @media (max-width: 481px) {
+    font-size: 2rem;
+  }
 `;
 
 export const ContainerInfoStyled = styled.div`

@@ -10,17 +10,48 @@ export const CheckoutDatosStyled = styled.div`
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+
+  @media (max-width: 481px) {
+    width: 100%;
+    margin-top: 20%;
+    color: var(--button-bg-white);
+    text-transform: uppercase;
+    display: flex;
+    flex-flow: column wrap;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
 `;
 
 export const Formik = styled(FormikContainer)`
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+
+  @media (max-width: 481px) {
+    display: flex;
+    -webkit-box-pack: justify;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 export const Form = styled(FormikForm)`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  input {
+    @media (max-width: 481px) {
+      display: flex;
+      margin: 1rem 0px;
+      flex-direction: column;
+      -webkit-box-pack: start;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
+    }
+  }
 `;
 
 export const BotonCheckout = styled.div`
@@ -29,4 +60,13 @@ export const BotonCheckout = styled.div`
   flex-direction: column;
   align-items: center;
   margin-top: 5%;
+
+  @media (max-width: 481px) {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 10%;
+  }
 `;

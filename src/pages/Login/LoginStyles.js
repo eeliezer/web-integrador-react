@@ -11,6 +11,24 @@ export const LoginContainerStyled = styled.div`
   font-family: 'Quantico', sans-serif;
   color: #fff;
   height: 60vh;
+
+  @media (max-width: 481px) {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20%;
+    margin-bottom: 25%;
+    font-family: Quantico, sans-serif;
+    color: rgb(255, 255, 255);
+    height: 110vh;
+    h1 {
+      text-transform: uppercase;
+    }
+  }
 `;
 
 export const Form = styled(FormikForm)`
@@ -32,6 +50,22 @@ export const Form = styled(FormikForm)`
     border-radius: 5px;
     margin-top: 0px;
   }
+
+  @media (max-width: 481px) {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 0px 2rem;
+    gap: 20px;
+
+    p {
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
 `;
 
 export const LoginPasswordStyled = styled.p`
@@ -40,6 +74,11 @@ export const LoginPasswordStyled = styled.p`
   :hover {
     text-decoration: underline;
     transition: all 0.25s ease-out;
+  }
+
+  @media (max-width: 481px) {
+    text-align: center;
+    text-transform: uppercase;
   }
 `;
 
@@ -53,6 +92,14 @@ export const LoginInputContainer = styled.div`
     border-radius: 5px;
     padding: 0.8rem 2rem;
     -webkit-text-fill-color: black;
+  }
+
+  @media (max-width: 481px) {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 15px;
   }
 `;
 
@@ -76,6 +123,11 @@ export const LoginEmailStyled = styled.p`
   :hover {
     text-decoration: underline;
     transition: all 0.25s ease-out;
+  }
+
+  @media (max-width: 481px) {
+    text-align: center;
+    text-transform: uppercase;
   }
 `;
 

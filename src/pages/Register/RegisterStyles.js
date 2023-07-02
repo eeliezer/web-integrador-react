@@ -12,6 +12,24 @@ export const LoginContainerStyled = styled.div`
   color: #fff;
   font-weight: 600;
   height: 60vh;
+
+  @media (max-width: 481px) {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30%;
+    margin-bottom: 20%;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    height: 100vh;
+
+    text-transform: uppercase;
+    text-align: center;
+  }
 `;
 
 export const Form = styled(FormikForm)`

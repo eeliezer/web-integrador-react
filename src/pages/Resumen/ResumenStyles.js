@@ -8,6 +8,16 @@ export const ResumenContainerStyled = styled.div`
   align-items: center;
   margin-top: 5%;
   margin-bottom: 5%;
+
+  @media (max-width: 481px) {
+    padding: 2rem 7rem;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
 `;
 
 export const ResumenTitleStyled = styled.div`
@@ -16,6 +26,14 @@ export const ResumenTitleStyled = styled.div`
   flex-direction: column;
   align-items: center;
   margin-bottom: 2%;
+  @media (max-width: 481px) {
+    color: var(--button-bg-white);
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 2%;
+  }
 `;
 
 export const StyledLink = styled(Link)`
@@ -52,6 +70,16 @@ export const ResumenContainerInfoStyled = styled.div`
   color: var(--button-bg-white);
   margin-top: 5%;
   margin-bottom: 5%;
+
+  @media (max-width: 481px) {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    color: var(--button-bg-white);
+    margin-top: 25%;
+    margin-bottom: 25%;
+    text-transform: uppercase;
+  }
 `;
 
 export const CostoProductoStyled = styled.div`
