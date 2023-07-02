@@ -11,6 +11,21 @@ export const NavbarContainerStyled = styled.div`
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
+
+  @media (max-width: 803px) {
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    padding: 1rem 4rem;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    width: 100%;
+    flex-direction: column;
+  }
+
   @media (max-width: 769px) {
     height: 300px;
     background-color: rgb(255, 255, 255);
