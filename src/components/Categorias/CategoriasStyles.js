@@ -79,7 +79,6 @@ export const CardCategoria = styled(motion.div)`
     width: 110px;
     padding: 1rem 2rem;
     color: var(--button-bg-red);
-    background-color: var(--button-bg-white);
     border-radius: 5px;
     cursor: pointer;
     -webkit-box-align: center;
