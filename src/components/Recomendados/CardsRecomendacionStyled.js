@@ -31,7 +31,7 @@ export const CardsContainer = styled.div`
   @media (max-width: 803px) {
     height: 380px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 1rem;
     background-color: rgb(255, 255, 255);

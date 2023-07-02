@@ -26,11 +26,6 @@ function Home() {
     <HomeWrapper>
       {/* Hero Section */}
       <Hero doScroll={doScroll} />
-      {/* Recomendados Section */}
-      <RecomendadosWrapper>
-        <h2>Hoy te recomendamos</h2>
-        <CardsRecomendacion />
-      </RecomendadosWrapper>
       {/* Categorias Section */}
       <CategoriasWrapper>
         <h2>Categorias</h2>
@@ -41,6 +36,11 @@ function Home() {
         <h2>Nuestros productos</h2>
         <CardsProductos />
       </ProductosWrapper>
+      {/* Recomendados Section */}
+      <RecomendadosWrapper>
+        <h2>Hoy te recomendamos</h2>
+        <CardsRecomendacion />
+      </RecomendadosWrapper>
     </HomeWrapper>
   );
 }

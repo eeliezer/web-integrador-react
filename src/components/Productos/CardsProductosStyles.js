@@ -66,14 +66,14 @@ export const ProductosCard = styled.div`
     -webkit-box-align: center;
     align-items: center;
     justify-content: space-around;
-
+    font-size: 1rem;
     img {
       width: 50%;
       margin-bottom: 1rem;
     }
     h2 {
       text-transform: uppercase;
-      font-size: 1rem;
+      font-size: 1rem !important;
       text-align: center;
       margin: 0px;
     }

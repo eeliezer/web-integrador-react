@@ -30,12 +30,12 @@ export const CategoriasContainer = styled.div`
   }
   @media (max-width: 481px) {
     display: flex;
-    justify-content: space-around;
     -webkit-box-align: center;
-    align-items: center;
-    gap: 20px;
     user-select: none;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    align-items: center;
   }
 `;
 
@@ -56,6 +56,7 @@ export const CardCategoria = styled(motion.div)`
   align-items: center;
   h2 {
     font-size: 0.9rem;
+    display: none;
   }
 
   img {
@@ -79,24 +80,21 @@ export const CardCategoria = styled(motion.div)`
 
   @media (max-width: 481px) {
     display: flex;
-    flex-direction: column;
     -webkit-box-pack: center;
-    justify-content: center;
-    gap: 0.5rem;
-    width: 110px;
-    padding: 1rem 2rem;
+    width: 65px;
     color: var(--button-bg-red);
     border-radius: 5px;
     cursor: pointer;
     -webkit-box-align: center;
     align-items: center;
+    margin-bottom: 1rem;
     h2 {
       display: none;
     }
 
     img {
       width: auto;
-      height: 35px;
+      height: 20px;
     }
   }
 `;
@@ -106,4 +104,8 @@ export const BorderDecoration = styled.div`
   width: 30%;
   background: var(--gray-bg-disabled);
   border-radius: 15px;
+
+  @media (max-width: 481px) {
+    display: none;
+  }
 `;

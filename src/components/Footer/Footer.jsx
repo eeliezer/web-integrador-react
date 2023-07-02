@@ -18,7 +18,7 @@ const Footer = () => {
         </Link>
       </LinksContainerStyled>
       <p>
-        Eliezer Espejo<span> Red Ninja Collections</span>
+        <span> Red Ninja Collections® 2023</span>
       </p>
     </FooterContainerStyled>
   );

@@ -234,6 +234,7 @@ export const IconWrapperStyled = styled.div`
     font-size: 1.5rem;
     position: relative;
     left: -1.8rem;
+    top: 0rem;
   }
 `;
 

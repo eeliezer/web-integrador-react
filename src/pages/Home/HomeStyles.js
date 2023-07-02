@@ -8,13 +8,14 @@ export const HomeWrapper = styled.div`
   color: #ffffff;
   font-weight: 600;
   text-transform: uppercase;
+  text-align: center;
   h2 {
     font-weight: 400;
   }
 `;
 
 export const CategoriasWrapper = styled.section`
-  margin-top: 8rem;
+  margin-top: 2%;
   @media (max-width: 481px) {
     margin-top: 2rem;
     h2 {
@@ -25,9 +26,9 @@ export const CategoriasWrapper = styled.section`
 `;
 
 export const ProductosWrapper = styled.section`
-  padding-top: 5rem;
+  padding-top: 2rem;
   @media (max-width: 481px) {
-    padding-top: 2rem;
+    padding-top: 1rem;
     h2 {
       text-transform: uppercase;
       font-size: 1.3rem;
@@ -38,13 +39,13 @@ export const ProductosWrapper = styled.section`
 export const RecomendadosWrapper = styled.section`
   margin-top: 5rem;
   width: 100%;
+  margin-bottom: 5%;
   h2 {
     font-weight: 400;
   }
 
   @media (max-width: 481px) {
-    margin-top: 0rem;
-
+    margin-top: 3rem;
     h2 {
       font-weight: 400;
       text-transform: uppercase;
