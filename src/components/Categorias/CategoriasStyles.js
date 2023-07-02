@@ -70,6 +70,13 @@ export const CardCategoria = styled(motion.div)`
     }
   }
 
+  @media (max-width: 1281px) {
+    width: 150px;
+    h2 {
+      display: none;
+
+  }
+
   @media (max-width: 481px) {
     display: flex;
     flex-direction: column;

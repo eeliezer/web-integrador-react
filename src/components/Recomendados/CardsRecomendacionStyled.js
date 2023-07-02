@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const CardsContainer = styled.div`
   grid-template-columns: ${({ gridLength }) => `repeat(${gridLength}, 1fr)`};
-  height: 380px;
+  height: 360px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
@@ -10,19 +10,34 @@ export const CardsContainer = styled.div`
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
   overflow: hidden;
-  align-items: center;
-  justify-items: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  -moz-box-align: center;
+  place-items: center;
 
-  @media (max-width: 803px) {
+  @media (max-width: 1281px) {
     height: 360px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    overflow: hidden;
+    -moz-box-align: center;
+    place-items: center;
+  }
+
+  @media (max-width: 803px) {
+    height: 380px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 1rem;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     overflow: scroll;
-    -webkit-box-align: center;
+    -moz-box-align: center;
     place-items: center;
   }
 
