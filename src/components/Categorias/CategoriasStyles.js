@@ -55,7 +55,7 @@ export const CardCategoria = styled(motion.div)`
   cursor: pointer;
   align-items: center;
   h2 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   img {

@@ -7,6 +7,7 @@ export const HomeWrapper = styled.div`
   margin: 0 auto;
   color: #ffffff;
   font-weight: 600;
+  text-transform: uppercase;
   h2 {
     font-weight: 400;
   }
