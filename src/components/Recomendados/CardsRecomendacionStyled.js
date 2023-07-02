@@ -4,7 +4,7 @@ export const CardsContainer = styled.div`
   grid-template-columns: ${({ gridLength }) => `repeat(${gridLength}, 1fr)`};
   height: 360px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding: 1rem;
   background-color: rgb(255, 255, 255);

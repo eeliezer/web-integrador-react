@@ -74,7 +74,7 @@ export const CardCategoria = styled(motion.div)`
     width: 150px;
     h2 {
       display: none;
-
+    }
   }
 
   @media (max-width: 481px) {
