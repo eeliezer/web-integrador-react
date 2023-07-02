@@ -221,7 +221,7 @@ export const products = [
   },
   {
     id: 28,
-    title: 'Lord Of The Rings Almohada – Home is Behind, The World Ahead',
+    title: 'Lord Of The Rings Almohada',
     img: 'https://res.cloudinary.com/divurmndi/image/upload/v1684286302/25626256_0-39-247x296_hrokvb.jpg',
     desc: 'Diseño en colores pasteles',
     price: 1350,
@@ -237,7 +237,7 @@ export const products = [
   },
   {
     id: 30,
-    title: 'Lord Of The Rings Bolso – Become who you were born to be.',
+    title: 'Lord Of The Rings Bolso.',
     img: 'https://res.cloudinary.com/divurmndi/image/upload/v1684286302/4101227_1-48-247x296_lwzjqb.jpg',
     desc: 'Dice Elrond a Aragorn al entregarle a Narsil',
     price: 1999,
