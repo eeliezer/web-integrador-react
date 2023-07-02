@@ -46,7 +46,7 @@ export const ContainerStyled = styled(motion.div)`
     justify-content: space-between;
     gap: 30px;
     width: 320px;
-    height: 530px;
+    height: 580px;
     overflow: auto;
     background-color: var(--background-card-white);
     border-radius: 0px 0px 0px 1rem;

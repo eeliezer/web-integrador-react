@@ -111,7 +111,7 @@ export const LoginInputContainer = styled.div`
     flex-direction: column;
     -webkit-box-align: center;
     align-items: center;
-    gap: 15px;
+    gap: 35px;
   }
 `;
 
