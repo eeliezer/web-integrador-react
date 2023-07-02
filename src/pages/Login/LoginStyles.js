@@ -11,6 +11,9 @@ export const LoginContainerStyled = styled.div`
   color: #fff;
   height: 60vh;
   text-transform: uppercase;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
   @media (max-width: 481px) {
     display: flex;
     flex-direction: column;
@@ -19,8 +22,8 @@ export const LoginContainerStyled = styled.div`
     -webkit-box-pack: center;
     justify-content: center;
     gap: 20px;
-    margin-top: 20%;
-    margin-bottom: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     font-family: Quantico, sans-serif;
     color: rgb(255, 255, 255);
     height: 110vh;
@@ -92,6 +95,15 @@ export const LoginInputContainer = styled.div`
     border-radius: 5px;
     padding: 0.8rem 2rem;
     -webkit-text-fill-color: black;
+  }
+
+  @media (max-width: 803px) {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 2%;
   }
 
   @media (max-width: 481px) {

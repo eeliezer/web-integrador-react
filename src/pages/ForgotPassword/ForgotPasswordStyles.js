@@ -13,6 +13,10 @@ export const ForgotContainerStyled = styled.div`
     color: var(--button-bg-white);
   }
 
+  @media (max-width: 803px) {
+    height: calc(88vh - 400px);
+  }
+
   @media (max-width: 481px) {
     display: flex;
     flex-direction: column;
@@ -21,8 +25,8 @@ export const ForgotContainerStyled = styled.div`
     -webkit-box-pack: center;
     justify-content: center;
     gap: 20px;
-    margin-top: 15%;
-    margin-bottom: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     height: calc(140vh - 400px);
     text-align: center;
     text-transform: uppercase;

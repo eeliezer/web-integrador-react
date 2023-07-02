@@ -21,8 +21,8 @@ export const LoginContainerStyled = styled.div`
     -webkit-box-pack: center;
     justify-content: center;
     gap: 20px;
-    margin-top: 30%;
-    margin-bottom: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     color: rgb(255, 255, 255);
     font-weight: 600;
     height: 100vh;
