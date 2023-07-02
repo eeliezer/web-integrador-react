@@ -96,6 +96,13 @@ export const CardCategoria = styled(motion.div)`
       width: auto;
       height: 20px;
     }
+
+    :first-child {
+      img {
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+    }
   }
 `;
 

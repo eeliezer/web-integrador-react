@@ -1,7 +1,7 @@
 export const Categories = [
   {
     id: 1,
-    img: 'https://res.cloudinary.com/divurmndi/image/upload/v1683239308/DC_Comics_logo_wifjkh.png',
+    img: 'https://res.cloudinary.com/divurmndi/image/upload/v1688271798/DC-Comics-Logo-PNG-Cutout_i61nwm.png',
     title: 'DC Comics',
     category: 'dccomics',
   },
