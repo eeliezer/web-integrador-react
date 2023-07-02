@@ -171,7 +171,7 @@ export const products = [
   },
   {
     id: 22,
-    title: 'Funko Pop Avengers End Game – Thor 1117 Glows in the Dark CHASE',
+    title: 'Funko Pop Avengers End Game – Thor Dark CHASE',
     img: 'https://res.cloudinary.com/divurmndi/image/upload/v1684285509/THOR-1117-CHASE-CAJA_heu8mc.webp',
     desc: 'Sticker Special Edition Funko y GLOW CHASE',
     price: 7700,
@@ -179,8 +179,7 @@ export const products = [
   },
   {
     id: 23,
-    title:
-      'Funko Pop Captain America The Winter Soldier – Winter Soldier 838 Exclusive',
+    title: 'Funko Pop Captain America The Winter Soldier',
     img: 'https://res.cloudinary.com/divurmndi/image/upload/v1684285509/WINTER-SOLDIER-838-CAJA_pvv86g.webp',
     desc: 'Sticker amazon Exclusive',
     price: 5000,
