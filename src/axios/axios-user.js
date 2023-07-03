@@ -12,7 +12,7 @@ export const createUser = async (nombre, email, password) => {
     return response.data;
   } catch (error) {
     console.log(error);
-    alert('No se puede registrar usuario');
+    alert('¡Usuario ya registrado!');
   }
 };
 
@@ -26,6 +26,6 @@ export const loginUser = async (email, password) => {
     return response.data;
   } catch (error) {
     console.log(error);
-    alert('Usuario no registrado');
+    alert('¡Usuario no registrado!');
   }
 };

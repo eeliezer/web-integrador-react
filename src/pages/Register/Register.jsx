@@ -10,9 +10,11 @@ import { registerValidationSchema } from '../../formik/validationSchema';
 import { useDispatch } from 'react-redux';
 import { setCurrentUser } from '../../redux/user/userSlice';
 import { createUser } from '../../axios/axios-user';
+import { useRedirect } from '../../hooks/useRedirect';
 
 const Register = () => {
   const dispatch = useDispatch();
+  useRedirect('/');
   return (
     <LoginContainerStyled>
       <h1>Crea tu cuenta</h1>

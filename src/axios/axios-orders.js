@@ -16,7 +16,7 @@ export const getOrders = async (dispatch, currentUser) => {
         'x-token': currentUser.token,
       },
     });
-
+    console.log(currentUser.token);
     console.log('ORDENES ==> ', orders.data.data);
     dispatch(fetchOrdersSuccess(orders.data.data));
   } catch (error) {
@@ -31,7 +31,6 @@ export const createOrder = async (order, dispatch, currentUser) => {
         'x-token': currentUser.token,
       },
     });
-
     if (response) {
       getOrders(dispatch, currentUser);
     }
