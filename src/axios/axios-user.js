@@ -11,8 +11,7 @@ export const createUser = async (nombre, email, password) => {
     console.log(response);
     return response.data;
   } catch (error) {
-    console.log(error);
-    alert('¡Usuario ya registrado!');
+    alert(error.response.data.errors[0].msg);
   }
 };
 
@@ -25,7 +24,6 @@ export const loginUser = async (email, password) => {
     console.log(response);
     return response.data;
   } catch (error) {
-    console.log(error);
-    alert('¡Usuario no registrado o contraseña invalida!');
+    alert(error.response.data.msg);
   }
 };

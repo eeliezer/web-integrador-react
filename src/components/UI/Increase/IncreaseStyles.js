@@ -8,7 +8,6 @@ export const IncreaseStyled = styled(motion.button)`
   -webkit-box-pack: center;
   width: 20px;
   height: 20px;
-  background: ${({ bgColor }) => bgColor || 'var(--button-bg-white)'};
   border: none;
   border-radius: 5px;
   font-size: 1.8rem;

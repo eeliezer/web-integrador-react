@@ -30,10 +30,7 @@ const CardProductCheckout = ({ img, title, desc, price, quantity, id }) => {
         <PriceStyled>Precio: {formatPrice(price)}</PriceStyled>
       </CardInfoStyled>
       <QuantityContainerStyled>
-        <Increase
-          bgColor='var(--button-bg-white)'
-          onClick={() => dispatch(removeFromCart(id))}
-        >
+        <Increase onClick={() => dispatch(removeFromCart(id))}>
           {quantity === 1 ? <IoMdTrash /> : <FaMinus />}
         </Increase>
         <Count>{quantity}</Count>
