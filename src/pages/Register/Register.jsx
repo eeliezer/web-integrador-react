@@ -7,13 +7,13 @@ import Submit from '../../components/UI/Submit/Submit';
 import { Form, LoginContainerStyled, LoginEmailStyled } from './RegisterStyles';
 import { registerInitialValues } from '../../formik/initialValues';
 import { registerValidationSchema } from '../../formik/validationSchema';
-import { useDispatch } from 'react-redux';
-import { setCurrentUser } from '../../redux/user/userSlice';
+//import { useDispatch } from 'react-redux';
+//import { setCurrentUser } from '../../redux/user/userSlice';
 import { createUser } from '../../axios/axios-user';
 import { useRedirect } from '../../hooks/useRedirect';
 
 const Register = () => {
-  const dispatch = useDispatch();
+  //const dispatch = useDispatch();
   useRedirect('/');
   return (
     <LoginContainerStyled>
@@ -25,14 +25,8 @@ const Register = () => {
           const { name, email, password } = values;
           const user = await createUser(name, email, password);
           actions.resetForm();
-          if (user) {
-            dispatch(
-              setCurrentUser({
-                ...user.usuario,
-                token: user.token,
-              })
-            );
-          }
+          alert('¡Usuario creado, ahora puedes iniciar sesión con tus datos!');
+          console.log(user);
         }}
       >
         <Form>
