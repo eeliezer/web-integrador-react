@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Formik } from 'formik';
 
 import LoginInput from '../../components/UI/LoginInput/LoginInput';
@@ -11,10 +11,20 @@ import { registerValidationSchema } from '../../formik/validationSchema';
 //import { setCurrentUser } from '../../redux/user/userSlice';
 import { createUser } from '../../axios/axios-user';
 import { useRedirect } from '../../hooks/useRedirect';
+import Loader from '../../components/UI/Loader/Loader';
 
 const Register = () => {
   //const dispatch = useDispatch();
   useRedirect('/');
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleRegistro = () => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 4000);
+  };
+
   return (
     <LoginContainerStyled>
       <h1>Crea tu cuenta</h1>
@@ -33,7 +43,8 @@ const Register = () => {
           <LoginInput name='name' type='text' placeholder='Nombre' />
           <LoginInput name='email' type='text' placeholder='Email' />
           <LoginInput name='password' type='password' placeholder='Password' />
-          <Submit>Registrarte</Submit>
+          <Submit onClick={handleRegistro}>Registrarte</Submit>
+          {isLoading && <Loader />}
           <LoginEmailStyled to='/login'>
             <p>¿Ya tienes cuenta? Inicia sesión aquí</p>
           </LoginEmailStyled>

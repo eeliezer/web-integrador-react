@@ -43,7 +43,16 @@ const ForgotPassword = () => {
         <Form>
           <LoginInput name='email' type='text' placeholder='Email' />
           <ButtonContainer>
-            <Submit type='button' onClick={e => e.preventDefault()}>
+            <Submit
+              type='button'
+              onClick={e =>
+                e.preventDefault(
+                  alert(
+                    'Se ha enviado un correo electrónico, para que restablezcas tu contraseña'
+                  )
+                )
+              }
+            >
               Ingresar
             </Submit>
             <ForgotEmailStyled onClick={() => navigate('/login')}>
